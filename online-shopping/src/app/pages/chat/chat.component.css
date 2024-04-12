@@ -1,0 +1,58 @@
+section {
+  margin: 1em 3em;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+i {
+  color: #fff;
+}
+
+.inputs {
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+  border: 2px solid #333;
+  display: flex;
+}
+
+.inputs input {
+  border: 0;
+  outline: 0;
+  flex: 1;
+  padding: 0 16px;
+  font-size: 18px;
+}
+
+.response {
+  /* border: 1px solid red; */
+  height: 550px;
+  padding: 12px;
+  line-height: 1.5em;
+  overflow-y: scroll;
+}
+
+.response-empty img {
+  width: 150px;
+}
+
+.response-empty {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.response img {
+  height: 100px;
+}

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+th {
+  background: #3187e8;
+  color: #fff;
+}
+
+td,
+th {
+  padding: 8px 14px;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+
+table {
+  margin: auto;
+  min-width: 800px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+tr:hover {
+  background-color: #f3f1f1;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
+* {
+  font-family: "comfortaa";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.rating i {
+  color: rgb(255, 204, 0);
+  display: inline-block;
+}
+
+button {
+  border: none;
+  outline: 0;
+}
+
+.primary-btn {
+  color: #fff;
+  padding: 14px;
+  background-color: #000;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.secondary-btn {
+  border: 1px solid #000;
+  padding: 13px;
+  background: #fff;
+}

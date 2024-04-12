@@ -1,0 +1,34 @@
+<div class="cart">
+  <h1>Cart</h1>
+  <p>There are {{ cart.length }} items in your cart</p>
+  @if(cart.length > 0) {
+  <table>
+    <thead>
+      <tr>
+        <th>Products</th>
+        <th>Quantify</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @for(c of cart; track c) {
+      <tr>
+        <td>
+          <img [src]="c.image" alt="" width="100" />
+          <span>{{ c.name }}</span>
+        </td>
+        <td>1</td>
+        <td>
+          {{ c.price }}
+        </td>
+        <td>
+          <button (click)="onDelete(c.id)">Delete</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+</div>

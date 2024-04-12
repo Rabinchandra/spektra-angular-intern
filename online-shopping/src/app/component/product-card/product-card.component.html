@@ -1,0 +1,16 @@
+<a [routerLink]="['products', id]" class="product-card">
+  <div class="img" [ngStyle]="imageObj"></div>
+
+  <small>
+    {{ category }}
+  </small>
+  <h3>
+    {{ name }}
+  </h3>
+  <div class="rating">
+    <i class="fi fi-ss-star"></i>
+    <i class="fi fi-ss-star"></i>
+    <i class="fi fi-ss-star"></i>
+  </div>
+  <b class="price"> $ {{ price }} </b>
+</a>

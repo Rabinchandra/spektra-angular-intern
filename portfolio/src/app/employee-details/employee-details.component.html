@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <section>
+    <div
+      class="image"
+      [style]="{
+        'background-image': 'url(' + employee?.image + ')'
+      }"
+    ></div>
+    <div class="text-center">
+      <h3>Hello, I am {{ employee?.name }}</h3>
+      <h1>{{ employee?.position }}</h1>
+    </div>
+    <p class="text-center">
+      {{ employee?.portfolio?.bio }}
+    </p>
+
+    <div class="text-center">
+      <h1>Projects</h1>
+
+      @for(p of projects; track p) {
+      <div class="project">
+        <h2>{{ p.title }}</h2>
+        <p>
+          {{ p.description }}
+        </p>
+        <a href="">{{ p.link }}</a>
+      </div>
+      }
+    </div>
+  </section>
+</div>

@@ -1,0 +1,23 @@
+<div>
+  <div class="search">
+    <input
+      type="search"
+      placeholder="Search items here..."
+      [(ngModel)]="inputText"
+    />
+    <i class="fi fi-br-search" (click)="fetchData()"></i>
+  </div>
+
+  <section class="products">
+    @for(p of products; track p) {
+    <app-product-card
+      [name]="p.name"
+      [image]="p.images[0]"
+      [category]="p.category"
+      [price]="p.price"
+      [rating]="p.rating"
+      [id]="p.id"
+    ></app-product-card>
+    }
+  </section>
+</div>

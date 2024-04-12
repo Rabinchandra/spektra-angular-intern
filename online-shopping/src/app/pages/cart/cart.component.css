@@ -1,0 +1,29 @@
+tbody td:first-child {
+  display: flex;
+  align-items: center;
+  line-height: 1.7em;
+}
+
+td,
+th {
+  padding: 16px 1em;
+  text-align: center;
+  min-width: 300px;
+}
+
+thead {
+  text-align: left;
+}
+
+td img {
+  margin-right: 20px;
+}
+
+.cart {
+  padding: 0 3em;
+}
+
+table {
+  margin: auto;
+  margin-top: 3em;
+}

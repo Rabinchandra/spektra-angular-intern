@@ -1,0 +1,102 @@
+.product-details {
+  padding: 2em 4em;
+  /* display: flex; */
+}
+
+.product-details > div {
+  display: flex;
+}
+
+.product-details > div > section {
+  margin: 0 20px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.active-image {
+  outline: 2px solid #333;
+}
+
+.images-container {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.images-container img {
+  display: inline-block;
+  margin: 0 12px;
+  padding: 10px;
+}
+
+p {
+  color: #7e7e7e;
+  font-weight: lighter;
+  line-height: 1.8em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.rating {
+  font-size: 2em;
+}
+
+.main-img {
+  display: block;
+  margin: auto;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.buttons button:nth-child(2) {
+  margin-left: 10px;
+}
+
+.buttons button {
+  font-size: 1em;
+  padding: 20px;
+}
+
+table {
+  margin-top: 3em;
+  font-size: 1.1em;
+  width: 600px;
+}
+
+table td {
+  padding: 20px;
+  /* min-width: 300px; */
+}
+
+table tr:nth-child(even) {
+  background: #eee;
+}
+
+.more-detail {
+  margin-top: 6em;
+}
+
+.review-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.review i {
+  font-size: 20px;
+}
+
+.review {
+  display: flex;
+  gap: 2em;
+}
+
+h2 {
+  margin-bottom: 2em;
+}

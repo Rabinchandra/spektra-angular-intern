@@ -1,0 +1,26 @@
+<div>
+  <h1>People List</h1>
+  <table [cellSpacing]="0">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Position</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(emp of employees; track emp) {
+      <tr [routerLink]="['/details', { id: emp.id }]">
+        <td>
+          {{ emp.id }}
+        </td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.position }}</td>
+        <td>{{ emp.department }}</td>
+      </tr>
+
+      }
+    </tbody>
+  </table>
+</div>
