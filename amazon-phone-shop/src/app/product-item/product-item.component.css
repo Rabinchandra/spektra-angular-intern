@@ -1,0 +1,33 @@
+.image {
+  width: 200px;
+  /* height: 100px; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product-item {
+  margin: 2em 0;
+  display: flex;
+  gap: 2em;
+  border: 1px solid #eee;
+  padding: 1em;
+}
+
+.product-details {
+  padding: 12px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price small {
+  margin-left: 10px;
+}
+
+h2,
+h3 {
+  margin: 5px 0;
+}

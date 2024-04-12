@@ -1,0 +1,16 @@
+.product-detail {
+  border: 1px solid #ddd;
+  padding: 1em 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  margin-top: 3em;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}

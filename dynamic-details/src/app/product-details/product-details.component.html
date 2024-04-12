@@ -1,0 +1,12 @@
+<h1>Product Details</h1>
+<section>
+  @for(product of getProducts; track product) {
+  <div class="product-detail">
+    <h1>{{ product.title }}</h1>
+    <h3>${{ product.price }}</h3>
+    <p>
+      {{ product.description }}
+    </p>
+  </div>
+  }
+</section>

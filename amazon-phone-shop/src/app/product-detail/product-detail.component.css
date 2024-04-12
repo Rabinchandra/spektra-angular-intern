@@ -1,0 +1,103 @@
+.product-detail {
+  display: flex;
+  margin: 3em 0;
+  padding: 0 2em;
+}
+
+.product-detail > section {
+  flex: 1;
+}
+
+.amazon-choice {
+  background-color: #232f3f;
+  font-size: 12px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.amazon-choice span {
+  color: rgb(255, 149, 0);
+}
+
+.product-detail .image {
+  text-align: center;
+}
+
+.product-detail .image image {
+  width: 100px;
+}
+
+.product-detail header {
+  border-bottom: 1px solid #ddd;
+}
+
+.product-detail header p {
+  font-size: 13px;
+}
+
+.discount {
+  color: red;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.benefits {
+  display: flex;
+  gap: 10px;
+  margin-top: 2em;
+  border-top: 1px solid #eee;
+  padding-top: 2em;
+}
+
+.benefits > div {
+  width: 100px;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.benefits > div img {
+  display: block;
+  margin: auto;
+}
+
+.benefits > div a {
+  font-size: 12px;
+  color: rgb(41, 115, 199);
+  text-decoration: none;
+}
+
+.attributes td {
+  padding: 5px 12px;
+}
+
+.attributes tr td:first-child {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.buttons button {
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.image-list img {
+  display: block;
+  width: 50px;
+  margin-bottom: 20px;
+  padding: 5px 3px;
+  border-radius: 6px;
+}
+
+.active-image {
+  border: 1px solid #2ea7e0;
+  box-shadow: 0 0 6px 1px rgba(73, 153, 234, 0.943);
+}

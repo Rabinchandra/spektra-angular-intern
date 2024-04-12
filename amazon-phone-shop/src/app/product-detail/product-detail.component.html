@@ -1,0 +1,98 @@
+<section class="product-detail">
+  <div class="image-list">
+    <img
+      [src]="product?.images[0]"
+      alt=""
+      (click)="activeImageIndex = 0"
+      [class]="activeImageIndex == 0 ? 'active-image' : ''"
+    />
+    <img
+      [src]="product?.images[1]"
+      alt=""
+      (click)="activeImageIndex = 1"
+      [class]="activeImageIndex == 1 ? 'active-image' : ''"
+    />
+  </div>
+  <section class="image">
+    <img [src]="product?.images[activeImageIndex]" alt="" width="400" />
+  </section>
+
+  <section class="info">
+    <header>
+      <h1>{{ product.name }}</h1>
+      <div class="rating">
+        <i class="fi fi-ss-star"></i><i class="fi fi-ss-star"></i
+        ><i class="fi fi-ss-star"></i><i class="fi fi-ss-star"></i>
+      </div>
+      <div class="amazon-choice">Amazon's <span>Choice</span></div>
+      <p>2K+ bought in past month</p>
+    </header>
+
+    <div>
+      <h1>
+        @if(product.discount) {
+        <span class="discount">-{{ product.discount }}%</span>
+        $ {{ product.price - (product.discount * product.price) / 100 }} } @else
+        { $ {{ product.price }}
+        }
+      </h1>
+      @if(product.discount) {
+      <small>MRP: $ {{ product.price }}</small
+      >}
+      <p>
+        {{ product.description }}
+      </p>
+      <div class="buttons">
+        <button class="buy-btn">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="benefits">
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png"
+            alt=""
+            width="30"
+          />
+          <a href="">7 Day Service Center Replacement</a>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png"
+            alt=""
+            width="30"
+          />
+          <a href="">Free Delivery</a>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-warranty._CB485935626_.png"
+            alt=""
+            width="30"
+          />
+          <a href="">Warranty Policy</a>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-top-brand._CB617044271_.png"
+            alt=""
+            width="30"
+          />
+          <a href="">Top brand</a>
+        </div>
+      </div>
+
+      <!-- Attributes -->
+      <div class="attributes">
+        <h4>Product Attributes</h4>
+        <table>
+          @for(a of attributes; track a) {
+          <tr>
+            <td>{{ a[0] }}</td>
+            <td>{{ a[1] }}</td>
+          </tr>
+          }
+        </table>
+      </div>
+    </div>
+  </section>
+</section>

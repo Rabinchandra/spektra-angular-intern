@@ -1,0 +1,12 @@
+form {
+  width: 600px;
+  margin: auto;
+}
+
+label,
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+}

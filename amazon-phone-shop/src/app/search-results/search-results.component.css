@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+}
+
+.container > section {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.banner header {
+  display: flex;
+  padding-top: 2em;
+}
+
+.banner header > div:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 2em;
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.banner header > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner header > div:nth-child(2) a {
+  color: rgb(12, 95, 210);
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.banner {
+  font-size: 13px;
+}
+
+.banner-products {
+  display: flex;
+  gap: 2em;
+}
+
+.banner-product-image {
+  text-align: center;
+  padding: 12px;
+}
+
+.banner-product-item {
+  /* border: 1px solid red; */
+  margin: 2em 0;
+}
+
+.rev {
+  color: rgb(255, 149, 0);
+}
+
+.search-result header h3 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.search-result header p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}

@@ -1,0 +1,25 @@
+<div>
+  <h1>Employee Details</h1>
+  <table [cellSpacing]="0">
+    <tr>
+      <td>Employee ID:</td>
+      <td>{{ employee?.id }}</td>
+    </tr>
+    <tr>
+      <td>Employee Name:</td>
+      <td>{{ employee?.name }}</td>
+    </tr>
+    <tr>
+      <td>Designation:</td>
+      <td>{{ employee?.position }}</td>
+    </tr>
+    <tr>
+      <td>Salary:</td>
+      <td>$ {{ employee?.salary }}</td>
+    </tr>
+    <tr>
+      <td>Department:</td>
+      <td>{{ employee?.department }}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,38 @@
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css");
+
+* {
+  font-family: "Noto Sans";
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.add-to-cart {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 14px;
+  background-color: rgb(255, 204, 0);
+  cursor: pointer;
+}
+
+.buy-btn {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 14px;
+  background-color: rgb(255, 162, 0);
+  cursor: pointer;
+}
+
+.rating {
+  color: rgb(255, 149, 0);
+}
+
+.rating i {
+  margin-right: 2px;
+}

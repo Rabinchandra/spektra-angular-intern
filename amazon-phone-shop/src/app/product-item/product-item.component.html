@@ -1,0 +1,25 @@
+<div class="product-item" (click)="goToDetail()">
+  <div
+    class="image"
+    [ngStyle]="{
+      'background-image': 'url(' + image + ')'
+    }"
+  ></div>
+  <div class="product-details">
+    <h3>{{ name }}</h3>
+    <div class="rating">
+      <i class="fi fi-ss-star"></i><i class="fi fi-ss-star"></i
+      ><i class="fi fi-ss-star"></i><i class="fi fi-ss-star"></i>
+    </div>
+    <div class="price">
+      <h2>${{ price }}</h2>
+      @if(discount) {
+      <small>({{ discount }}% discount)</small>
+      }
+    </div>
+    <p>Free delivery <b>Saturday</b></p>
+    <div class="button">
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
